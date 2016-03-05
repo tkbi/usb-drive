@@ -1,0 +1,4 @@
+<p class="text">A <span class="italic">USB flash drive</span> is a data storage device that includes flash memory with an integrated Universal Serial Bus (USB) interface. USB flash drives are typically removable and rewritable, and physically much smaller than a floppy disk. Most weigh less than 30 g. As of September 2011 drives of up to 256 gigabytes (GB) are available. Storage capacities as large as 2 terabytes are planned, with steady improvements in size and price per capacity expected. Some allow up to 100,000 write/erase cycles, depending on the exact type of memory chip used, and a 10 year shelf storage time. 
+</p>
+
+

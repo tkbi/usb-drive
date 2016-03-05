@@ -1,0 +1,33 @@
+/*
+	Project: USBdrive
+	Author: Valery Samovich
+    Date: 12/11/2012
+    Filename: form.css		
+*/
+/* Form Styles */
+fieldset {
+	border: 1px gray solid;
+}
+legend {
+	padding-left: 10px;
+	padding-right: 10px;
+	color: rgb(102, 102, 204);
+}
+.row {
+	padding: 5px;
+	margin: 5px;
+}
+#options {
+	color: rgb(102, 102, 204);
+}
+.column, #options {
+	float: left;
+	width: 160px;
+	text-align: right;
+	padding-right: 10px;
+	font-size: 14px;
+}
+.submit {
+	text-align: center;
+	padding: 5px;
+}

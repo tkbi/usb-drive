@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!--
+		Project: USBdrive
+		Author: Valery Samovich
+    	Date: 12/11/2012
+    	Filename: collection.html
+-->
+<title>Flash Drive Collection</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link href="styles/thumbnails.css" rel="stylesheet" type="text/css" />
+<link href="styles/styles.css" rel="stylesheet" type="text/css" />
+<link href="styles/navigation.css" rel="stylesheet" type="text/css" />
+<script src="scripts/navigation.js" type="text/javascript"></script>
+<script src="scripts/flash.js" type="text/javascript"></script>
+<script src="scripts/post.js" type="text/javascript"></script>
+<script src="scripts/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="container"> 
+  
+  <!--Header element-->
+  <header>
+    <h1>Flash Drive Technology Corporation</h1>
+  </header>
+  
+  <!--Navigation element-->
+  <nav>
+    <ul id="navigation">
+      <li class="dropdown"><a href="index.html">Home</a> </li>
+      <li class="dropdown"><a href="about.html">About Us</a>
+        <ul class="sub_navigation">
+          <li><a href="history.html">History</a></li>
+          <li><a href="future.html">Future</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="collection.html">Collection</a> </li>
+      <li class="dropdown"><a href="news.html">News</a> </li>
+      <li class="dropdown"><a href="contact.html">Contact</a> </li>
+    </ul>
+  </nav>
+  
+  <!--Section element-->
+  <section>
+    <h3>USB Flash Drive Collections</h3>
+    <div class="list">
+      <div id="mydiv1" class="squareImg1" onmouseout="eraseText1()" onmouseover="writeText1();"> <img alt="flash drive" height="180" src="images/performance.jpg" width="260" /></div>
+    </div>
+    <div class="list">
+      <div id="mydiv2" class="squareImg2" onmouseout="eraseText2()" onmouseover="writeText2();"> <img alt="flash drive" height="180" src="images/design.jpg" width="260" /></div>
+    </div>
+    <div class="list">
+      <div id="mydiv3" class="squareImg3" onmouseout="eraseText3()" onmouseover="writeText3();"> <img alt="flash drive" height="180" src="images/concept.jpg" width="260" /></div>
+    </div>
+    
+    <!--Ajax Post method. Supported files: post.js, post.txt-->
+    <div id="myDiv">
+      <button onclick="loadTextDoc()" type="button">More info</button>
+    </div>
+  </section>
+  
+  <!--Footer element-->
+  <footer>
+    <hr />
+    <p id="footer">2012 Design and Development by Valery Samovich</p>
+  </footer>
+</div>
+<p></p>
+</body>
+</html>

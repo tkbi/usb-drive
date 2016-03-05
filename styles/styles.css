@@ -1,0 +1,86 @@
+﻿/*
+	Project: USBdrive
+	Author: Valery Samovich
+    Date: 12/11/2012
+    Filename: styles.css		
+*/
+/* Container styles */
+#container {
+	margin: auto;
+	width: 800px;
+}
+/* Body styles */
+body {
+	background-color: white;
+	font-family: Arial, Verdana, sans-serif;
+}
+.course {
+	color: rgb(102, 102, 204);
+	font-size: 20px;
+}
+.italic {
+	color: rgb(102, 102, 204);
+	font-style: italic;
+	text-align: justify;
+}
+.button {
+	background-color: rgb(204, 204, 255);
+	color: rgb(51, 51, 102);
+	padding: 5px;
+}
+.display {
+	display: inline-block;
+}
+.text {
+	text-align: justify;
+}
+/* Header styles */
+header h1 {
+	background-color: rgb(51, 51, 102);
+	color: white;
+	font-weight: normal;
+	line-height: 200%;
+	padding-left: 22px;
+	font-size: 28px;
+	border-bottom: 7px solid rgb(204, 204, 255);
+}
+/* Navigation styles */
+nav {
+	display: block;
+}
+nav h1 {
+	background-color: rgb(51, 51, 102);
+	color: white;
+	font-weight: normal;
+	line-height: 200%;
+	padding-left: 22px;
+	font-size: 28px;
+	border-bottom: 7px solid rgb(204, 204, 255);
+}
+/* Section styles*/
+section .list {
+	float: left;
+}
+section h3 {
+	/*background-color: rgb(204, 204, 255);*/
+	color: rgb(51, 51, 102);
+	font-weight: normal;
+	line-height: 200%;
+	padding-left: 20px;
+	border-bottom: 3px solid rgb(51, 51, 102);
+	font-size: 18px;
+}
+/* Footer styles */
+footer {
+	display: block;
+	float: none;
+}
+footer p {
+	color: black;
+	font-size: 12px;
+	font-style: normal;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 0px;
+	float: none;
+}

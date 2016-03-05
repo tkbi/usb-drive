@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!--
+		Project: USBdrive
+		Author: Valery Samovich
+    	Date: 12/11/2012
+    	Filename: news.html
+-->
+<title>Flash Drive Technology News</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link href="styles/styles.css" rel="stylesheet" type="text/css" />
+<link href="styles/navigation.css" rel="stylesheet" type="text/css" />
+<script src="scripts/jquery.js" type="text/javascript"></script>
+<script src="scripts/navigation.js" type="text/javascript"></script>
+<script src="scripts/rssReader.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="container"> 
+  
+  <!--Header element-->
+  <header>
+    <h1>Flash Drive Technology</h1>
+  </header>
+  
+  <!--Navigation element-->
+  <nav>
+    <ul id="navigation">
+      <li class="dropdown"><a href="index.html">Home</a> </li>
+      <li class="dropdown"><a href="about.html">About Us</a>
+        <ul class="sub_navigation">
+          <li><a href="history.html">History</a></li>
+          <li><a href="future.html">Future</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="collection.html">Collection</a> </li>
+      <li class="dropdown"><a href="news.html">News</a> </li>
+      <li class="dropdown"><a href="contact.html">Contact</a> </li>
+    </ul>
+  </nav>
+  
+  <!--Section element-->
+  <section>
+    <h3>News</h3>
+    <form>
+		<select onchange="showRSS(this.value)">
+			<option value="">Select an RSS-feed:</option>
+			<option value="Google">Google News</option>
+			<option value="MSNBC">MSNBC News</option>
+		</select>
+	</form>
+	<br />
+	<div id="rssOutput">RSS-feed will be listed here...</div> 
+  </section>
+  
+  <!--Footer element-->
+  <footer>
+    <hr />
+    <p id="footer">2012 Design and Development by Valery Samovich</p>
+  </footer>
+</div>
+<p></p>
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿/*
+		Project: USBdrive
+		Author: Valery Samovich
+    	Date: 12/11/2012
+    	Filename: thumbnails.css
+*/
+
+/* Performance styles*/
+.squareImg1 {
+	display: block;
+	width: 260px;
+	height: 180px;
+	background-image: url("../images/performance.jpg");
+	margin: 0px 5px 10px 0px;
+}
+.squareImgOver1 {
+	display: block;
+	width: 260px;
+	height: 180px;
+	background-color: rgb(204, 204, 255);
+	color: rgb(51, 51, 102);
+	text-align: center;
+	margin: 0px 5px 15px 0px;
+}
+/* Design styles*/
+.squareImg2 {
+	display: block;
+	width: 260px;
+	height: 180px;
+	background-image: url("../images/design.jpg");
+	margin: 0px 5px 15px 5px;
+}
+.squareImgOver2 {
+	display: block;
+	width: 260px;
+	height: 180px;
+	background-color: rgb(204, 204, 255);
+	color: rgb(51, 51, 102);
+	text-align: center;
+	margin: 0px 5px 15px 5px;
+}
+/* Concept styles*/
+.squareImg3 {
+	display: block;
+	width: 260px;
+	height: 180px;
+	background-image: url("../images/concept.jpg");
+	margin: 0px 0px 15px 5px;
+}
+.squareImgOver3 {
+	display: block;
+	width: 260px;
+	height: 180px;
+	background-color: rgb(204, 204, 255);
+	color: rgb(51, 51, 102);
+	text-align: center;
+	margin: 0px 0px 15px 5px;
+}

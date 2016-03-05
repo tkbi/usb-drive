@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!--
+		Project: USBdrive
+		Author: Valery Samovich
+    	Date: 12/05/2012
+    	Filename: index.html
+		Supporting Files: N/A
+-->
+<title>Future of Flash Drive</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link href="styles/thumbnails.css" rel="stylesheet" type="text/css" />
+<link href="styles/styles.css" rel="stylesheet" type="text/css" />
+<link href="styles/navigation.css" rel="stylesheet" type="text/css" />
+<link href="styles/dom.css" rel="stylesheet" type="text/css" />
+<script src="scripts/navigation.js" type="text/javascript"></script>
+<script src="scripts/flash.js" type="text/javascript"></script>
+<script src="scripts/dom.js" type="text/javascript"></script>
+<script src="scripts/jquery.js" type="text/javascript"></script>
+<script src="scripts/jQuery-1.8.2.js"  type="text/javascript"></script>
+<script src="scripts/json.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="container"> 
+  
+  <!--Header element-->
+  <header>
+    <h1>Flash Drive Technology</h1>
+  </header>
+  
+  <!--Navigation element-->
+  <nav>
+    <ul id="navigation">
+      <li class="dropdown"><a href="index.html">Home</a> </li>
+      <li class="dropdown"><a href="about.html">About Us</a>
+        <ul class="sub_navigation">
+          <li><a href="history.html">History</a></li>
+          <li><a href="future.html">Future</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="collection.html">Collection</a> </li>
+      <li class="dropdown"><a href="news.html">News</a> </li>
+      <li class="dropdown"><a href="contact.html">Contact</a> </li>
+    </ul>
+  </nav>
+  
+  <!--Section element-->
+  <section>
+    <h3>Future of Flash Memory</h3>
+    <p class="display"> <img src="Small_Image1.jpg" id="Image1" alt="Cube House" height="128" width="192" /> <span class="course">50 TB Flash Drives...The Future of Flash Memory?</span><br />
+      When watching most science fiction movies, you probably can't help thinking about how glad you are to live in such a simple, non-apocalyptic world. The only problem is, our world isn't really that simple anymore...<br />
+      <br />
+      <span onclick="changeImg('Image1')" id="Image1s" class="button"> Click to view Large Image</span>
+    <hr />
+    
+    <!--JSON request and Ajax element. Supported files: json.js, json.txt-->
+    <div id="content"></div>
+    <button type="button" onClick="loadJSON()">Read more</button>
+    <div></div>
+    </p>
+    <hr />
+  </section>
+  
+  <!--Footer element.-->
+  <footer>
+    <p id="footer">2012 Design and Development by Valery Samovich</p>
+  </footer>
+</div>
+</body>
+</html>
