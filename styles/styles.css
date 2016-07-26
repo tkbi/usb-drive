@@ -76,6 +76,17 @@ footer {
 	float: none;
 }
 footer p {
+    color: black;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    float: none;
+}
+footer p a{
+    display: inline;
+    background-color: white;
 	color: black;
 	font-size: 12px;
 	font-style: normal;
@@ -83,4 +94,10 @@ footer p {
 	margin-top: 0px;
 	padding-top: 0px;
 	float: none;
+    padding:0px;
+}
+
+footer p a:hover{
+    color: black;
+    background-color: white;
 }
