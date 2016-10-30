@@ -12,6 +12,10 @@ elseif($q=="MSNBC")
   $xml=("http://rss.msnbc.msn.com/id/3032091/device/rss/rss.xml");
   }
 
+// Disallow the usage of external entities, in order to
+// avoid XXE vulnerabilities.
+libxml_disable_entity_loader(true);
+
 $xmlDoc = new DOMDocument();
 $xmlDoc->load($xml);
 
@@ -46,4 +50,3 @@ for ($i=0; $i<=2; $i++)
   echo ("<br>");
   echo ($item_desc . "</p>");
   }
-?>
