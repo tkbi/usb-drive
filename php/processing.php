@@ -1,18 +1,23 @@
 <?php
-if($_POST){  
-  
-	$name = $_POST['name']; //gets the entered name  
-	$email = $_POST['email']; //gets the entered email address  
-	$message = $_POST['message']; //gets the entered message   
-  
-	$to = "valery29@live.seminolestate.edu"; //email address  
 
-	//validating the fields if any empty  
-	if($name != "" && $email != ""  && $message != ""){  
-		mail($to,$name,$email,$message); //calling php mail function
-		echo "Thank You for Contact Acme Widget Corporation!";  
-	} else {  
-	echo "Please fill in all fields and submit again!";  
-	}  
+$to = 'valery29@live.seminolestate.edu';
+
+if ($_POST) {
+    $subject = $_POST['name'];
+    $sender = $_POST['email'];
+    $message = $_POST['message'];
+
+    // Disallow the usage of %0A and %0D chars inside
+    // the "subject" or "sender" fields to prevent
+    // headers injection.
+    if (strpbrk($subject, "\r\n") !== false || strstr($sender, "\r\n") !== false) {
+        die('A disallowed char was found.');
+    }
+
+    if ($subject != '' && $sender != '' && $message != '') {
+        mail($to, $subject, $sender, $message);
+        echo 'Thank You for Contacting Acme Widget Corporation!';
+    } else {
+        echo 'Please fill in all fields and submit again!';
+    }
 }
-?>
